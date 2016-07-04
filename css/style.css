@@ -1,0 +1,42 @@
+ #name{
+ 	color: #E8E8E8;
+ 	margin-top: 0px;
+ 	font-size: 2.2em;
+ 	font-family: Impact, fantasy;
+}
+.nav-tabs > li.active >a{
+	background-color: #E8E8E8;
+}
+.nav-tabs > li > a:hover{
+  background-color: #282828  /* !important;*/
+    border: none;
+    border-radius: 0;
+    color: black;
+    outline: none;
+}
+a, a:active, a:focus {
+	color: white;
+outline: none;
+}
+.jumbotron{
+	background-color: #303030;
+}
+body{
+	background-color: #E8E8E8;
+}
+#avatar{
+	margin-top: 20px;
+}
+#bodyContain{
+	margin-top: 175px;
+}
+#text{
+	border-right: 1px solid;
+	border-color: #808080;
+}
+#button{
+	background-color: #E8E8E8;
+}
+.icon-bar{
+	background-color: black;
+}
