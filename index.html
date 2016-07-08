@@ -1,345 +1,343 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	
-
-	<title>Hoa Pham's Resume</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>HoaPham's Resume</title>
 </head>
 <body>		
-	<!-- head -->
-	<nav class="navbar navbar-fixed-top">
-		<div class="jumbotron"  >
-			<div class="container" >		
+<!-- head -->
+<nav class="navbar navbar-fixed-top">
+	<div class="jumbotron"  >
+		<div class="container" >		
+			<div class="row">
+				<section class="col-sm-3">
+					<div class="container">
+						<button id="button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#home" data-toggle="tab" id="name">Hoa T. Pham</a>
+					</div>
+				</section>
+				<section class="col-sm-9" >
+					<div class="collapse navbar-collapse" id="collapsemenu">					
+						<ul class="nav nav-tabs  pull-right">					
+							<li class="active"><a data-toggle="tab" href="#home"><i class='glyphicon glyphicon-home'></i> Home</a></li>
+							<li><a href="#work" data-toggle="tab"><i class="glyphicon glyphicon-globe" aria-hidden="true"></i> Work Experience </a></li>
+							<li>	<a href="#edu" data-toggle="tab"><i class='glyphicon glyphicon-education'></i> Education</a></li>
+							<li>	<a href="#skills" data-toggle="tab"><i class="glyphicon glyphicon-briefcase"></i> Skills </a></li>
+							<li><a href="#projects" data-toggle="tab"> <i class="glyphicon glyphicon-folder-open"></i> Projects</a></li>
+							<li><a href="#leaderShip" data-toggle="tab"><i class="glyphicon glyphicon-user"></i> LeaderShip </a></li>
+							<li><a href="#award" data-toggle="tab"><i class="glyphicon glyphicon-thumbs-up"></i> Awards </a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- body	 -->
+<div id="bodyContain" class="container">
+	<div class="tab-content">
+		<!-- home page -->
+		<div id="home" class="tab-pane fade in active">
+			<div class="container">
 				<div class="row">
 					<section class="col-sm-3">
-						<div class="container">
-							<button id="button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a href="#home" data-toggle="tab" id="name">Hoa T. Pham</a>
+						<div class="center-block text-center">
+							<img id="avatar" src="images/avatar3.jpg" class="img-thumbnail" width="500px" onclick='this.src="images/avatar2.jpg"' >					
 						</div>
 					</section>
-					<section class="col-sm-9" >
-						<div class="collapse navbar-collapse" id="collapsemenu">					
-							<ul class="nav nav-tabs  pull-right">					
-								<li class="active"><a data-toggle="tab" href="#home"><i class='glyphicon glyphicon-home'></i> Home</a></li>
-								<li><a href="#work" data-toggle="tab"><i class="glyphicon glyphicon-globe" aria-hidden="true"></i> Work Experience </a></li>
-								<li>	<a href="#edu" data-toggle="tab"><i class='glyphicon glyphicon-education'></i> Education</a></li>
-								<li>	<a href="#skills" data-toggle="tab"><i class="glyphicon glyphicon-briefcase"></i> Skills </a></li>
-								<li><a href="#projects" data-toggle="tab"> <i class="glyphicon glyphicon-folder-open"></i> Projects</a></li>
-								<li><a href="#leaderShip" data-toggle="tab"><i class="glyphicon glyphicon-user"></i> LeaderShip </a></li>
-								<li><a href="#award" data-toggle="tab"><i class="glyphicon glyphicon-thumbs-up"></i> Awards </a></li>
-							</ul>
-						</div>
+					<section id="text" class="col-sm-6  ">
+						<h1  class="text-center">Web Developer</h1>
+						<h3 ><i>My name is Hoa Pham. I am a front-end web developer. Making websites is my passion. I use my free time to make websites. I believe  website is a place can connect everyone. </i></h3>
+						<h3 class="text"><i>I am currently a student and also an employee at Georgia State University. I am also availble for hire, do not hestitate to contact me!</i></h3>
+					</section>
+					<section class="col-sm-3">
+						<h1 class="text-center">Contact Me</h1>
+						<p>	<label><b>My email: hpham24@gsu.edu</b></label> </p>
+						<form> 
+							<div class="form-group">
+								<label >Your name:</label>
+								<input type="text"  class="form-control" placeholder="Type here...">
+							</div>
+							<div class="form-group">
+								<label >Your email:</label>
+								<input type="text"  class="form-control" placeholder="Type here...">
+							</div>
+							<div class="form-group">
+								<label for="disabledSelect">Your message:</label>
+								<textarea class="form-control" placeholder="Type here..." rows="3"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-primary">Send</button>
+						</form>
 					</section>
 				</div>
 			</div>
 		</div>
-	</nav>
-	<!-- body	 -->
-	<div id="bodyContain" class="container">
-		<div class="tab-content">
-			<!-- home page -->
-			<div id="home" class="tab-pane fade in active">
-				<div class="container">
-					<div class="row">
-						<section class="col-sm-3">
-							<div class="center-block text-center">
-								<img id="avatar" src="images/avatar3.jpg" class="img-thumbnail" width="500px" onclick='this.src="images/avatar2.jpg"' >					
-							</div>
-						</section>
-						<section id="text" class="col-sm-6  ">
-							<h1  class="text-center">Web Developer</h1>
-							<h3 ><i>My name is Hoa Pham. I am a front-end web developer. Making websites is my passion. I use my free time to make websites. I believe  website is a place can connect everyone. </i></h3>
-							<h3 class="text"><i>I am currently a student and also an employee at Georgia State University. I am also availble for hire, do not hestitate to contact me!</i></h3>
-						</section>
-						<section class="col-sm-3">
-							<h1 class="text-center">Contact Me</h1>
-							<p>	<label><b>My email: hpham24@gsu.edu</b></label> </p>
-							<form> 
-								<div class="form-group">
-									<label >Your name:</label>
-									<input type="text"  class="form-control" placeholder="Type here...">
-								</div>
-								<div class="form-group">
-									<label >Your email:</label>
-									<input type="text"  class="form-control" placeholder="Type here...">
-								</div>
-								<div class="form-group">
-									<label for="disabledSelect">Your message:</label>
-									<textarea class="form-control" placeholder="Type here..." rows="3"></textarea>
-								</div>
+		<!-- work experience -->
+		<div id="work" class="tab-pane fade">
+			<div class="container">
+				<h3 id="work"><b><u>Work Experience</u></b></h3>
+				<div class="row">
+					<!-- Computer Lab -->
+					<section class="col-xs-9">		
+						<h4>Computer Lab - Georgia State University, Clarskton, GA.</h4>
+						<p>A computer lab that can handle 40 people include students and instructors with computers. Every day, the lab receive more than a hundred of students and instructors coming. The lab is also known as an international lab which is located in an international building of a school. Students who are coming are around the world with different background and culture.</p>
 
-								<button type="submit" class="btn btn-primary">Send</button>
-							</form>
-						</section>
-					</div>
+						<h5>Computer Lab Assistant</h5>
+						<ul>
+							<li>Helping students and instructors with concerns, problems about computers and any device in the lab. I have to deal with different problems, different challenges because of the diversity of the lab. This thing makes me develop my problem-solving skill and practice to solve problems on hardware as well as software of computers. I also develop my communication skill.</li>
+							<li>Making sure everything is working perfectly every morning. Maintaining devices in the lab.</li>	
+						</ul>
+					</section>
+
+					<section class="col-xs-3 " >
+						<i>August 2015 - Present</i>
+					</section>		
+				</div>	
+				<!-- Web Developer of Engineering Club -->
+				<div class="row">
+					<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+						<div class="title"><h4>Computing Engineering Club - Georgia State University, Clarkston, GA.</h4></div>
+						<p>The largest club at Perimeter College. The organization, known as Computing and Engineering Club, is established on the Clarkston campus of the Georgia Perimeter College for the purpose of engaging students whose studies involve all aspects of both computer science and engineering. The club also has many big projects like Mini Submarine, Aircraft, UAV, Quad copter manual…</p>
+						<h5>Web Developer of a Club</h5>	
+						<ul>
+							<li>Design, maintain, and develop the website for the club. While doing the website, I practice my HTML, CSS, and Java at once. I do websites with the client and consumer in mind. I always try to make a website that will satisfy every student.</li>
+							<li>Trouble Shooting.</li>			
+						</ul>
+					</section>
+					<section class="col-xs-3 col-xl-2 ">
+						<i>August 2015 - May 2016</i>
+					</section>
+				</div>
+				<!-- Assiting manager of Lutus Carriers -->
+				<div class="row">
+					<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+						<div class="title"><h4> Lotus Carriers LLC - Lotus Carriers LLC, Stone Mountain, GA.</h4></div>
+						<p>A Lotus Carriers LLC company located in Stone Mountain, GA. This is a family company with a small amount of people. The company is shipping products from state to state. We had been traveled over all the states in the U.S. Since it is a small company, so I learned how to handle many things at once.</p>
+						<h5>Assistant to General Manager</h5>
+						<ul>
+							<li>Assiting the manager in planning truck.</li>
+							<li>Handling details of billing and paper work.</li>
+						</ul>
+					</section>
+					<section class="col-xs-2 col-sm-2 col-md-3 col-lg-3 col-xl-2   ">
+						<i>January 2015 - January 2016</i>
+					</section>
+				</div> <!-- row -->
+			</div> <!-- container -->
+		</div> <!-- end of work experience -->
+		<!-- education -->
+		<div id="edu" class="tab-pane fade">
+			<div class="container">
+				<h3 id="edu"><u><b>Education</b></u></h3>
+				<div class="row">
+					<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+						<div class="title"><p>Student - Georgia State Uninversity, Clarskton, GA.</p></div>
+						<ul>
+							<li>General Engineering</li>
+							<li>Computer Science</li>
+						</ul>
+					</section>
+					<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+						<i>August 2014 - Present</i>
+					</section>
+				</div> <!-- row -->
+
+				<div class="row">
+					<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+						<div class="title">	<p>Graduated - Horizons School, Atlanta, GA.</p></div>
+					</section> 
+					<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+						<i>May 2014</i>
+					</section>
+				</div>
+			</div> <!-- container -->
+		</div><!-- end of education -->	
+		<!-- skills			 -->
+		<div id="skills" class="tab-pane fade">
+			<div class="container">
+				<h3><u><b>Skills</b></u></h3>
+				<p >Version Control</p>
+				<ul>
+					<li>Git</li>
+					<li>Git Hub</li>
+				</ul>
+				<p>Programming Languages</p>
+				<ul>
+					<li>Java</li>
+				</ul>
+				<p >Web Front-End</p>
+				<ul>
+					<li>HTML_5</li>
+					<li>CSS_3</li>
+					<li>Bootstrap</li>
+					<li>JQuery</li>
+				</ul>
+				<p>Linguistics</p>
+				<ul>
+					<li>Vietnamese</li>
+					<li>English</li>
+					<li>Basic Chinese</li>
+				</ul>
+			</div> 
+		</div><!-- end of skills -->
+		<!-- project -->
+		<div id="projects" class="tab-pane fade">
+			<div class="container">
+				<h3><u><b>Projects</b></u></h3>
+				<div class="row">
+					<section class="col-sm-6">
+						<p>Coming soon!!!!!</p>
+					</section>
 				</div>
 			</div>
-			<!-- work experience -->
-			<div id="work" class="tab-pane fade">
-				<div class="container">
-					<h3 id="work"><b><u>Work Experience</u></b></h3>
-					<div class="row">
-						<!-- Computer Lab -->
-						<section class="col-xs-9">		
-							<h4>Computer Lab - Georgia State University, Clarskton, GA.</h4>
-							<p>A computer lab that can handle 40 people include students and instructors with computers. Every day, the lab receive more than a hundred of students and instructors coming. The lab is also known as an international lab which is located in an international building of a school. Students who are coming are around the world with different background and culture.</p>
+		</div>
+		<!-- leader ship -->
+		<div id="leaderShip" class="tab-pane fade">
+			<div class="container">					
+				<h3 id="leaderShip"><u><b>Leadership</b></u></h3>
+				<div class="row">
+					<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+						<div class="title"><p>President of Science Club - Georgia State University, Clarskton, GA.</p></div>
+					</section>
+					<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+						<i>January 2015 - Present</i>
+					</section>
+				</div>
 
-							<h5>Computer Lab Assistant</h5>
-							<ul>
-								<li>Helping students and instructors with concerns, problems about computers and any device in the lab. I have to deal with different problems, different challenges because of the diversity of the lab. This thing makes me develop my problem-solving skill and practice to solve problems on hardware as well as software of computers. I also develop my communication skill.</li>
-								<li>Making sure everything is working perfectly every morning. Maintaining devices in the lab.</li>	
-							</ul>
-						</section>
+				<div class="row">
+					<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+						<div class="title">	<p>International Peer Assitant - Georgia State University, Clarkston, GA.</p></div>
+					</section>
+					<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+						<i>August 2015 - Present</i>
+					</section>
+				</div>
 
-						<section class="col-xs-3 " >
-							<i>August 2015 - Present</i>
-						</section>		
-					</div>	
-					<!-- Web Developer of Engineering Club -->
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-							<div class="title"><h4>Computing Engineering Club - Georgia State University, Clarkston, GA.</h4></div>
-							<p>The largest club at Perimeter College. The organization, known as Computing and Engineering Club, is established on the Clarkston campus of the Georgia Perimeter College for the purpose of engaging students whose studies involve all aspects of both computer science and engineering. The club also has many big projects like Mini Submarine, Aircraft, UAV, Quad copter manual…</p>
-							<h5>Web Developer of a Club</h5>	
-							<ul>
-								<li>Design, maintain, and develop the website for the club. While doing the website, I practice my HTML, CSS, and Java at once. I do websites with the client and consumer in mind. I always try to make a website that will satisfy every student.</li>
-								<li>Trouble Shooting.</li>			
-							</ul>
-						</section>
-						<section class="col-xs-3 col-xl-2 ">
-							<i>August 2015 - May 2016</i>
-						</section>
-					</div>
-					<!-- Assiting manager of Lutus Carriers -->
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-							<div class="title"><h4> Lotus Carriers LLC - Lotus Carriers LLC, Stone Mountain, GA.</h4></div>
-							<p>A Lotus Carriers LLC company located in Stone Mountain, GA. This is a family company with a small amount of people. The company is shipping products from state to state. We had been traveled over all the states in the U.S. Since it is a small company, so I learned how to handle many things at once.</p>
-							<h5>Assistant to General Manager</h5>
-							<ul>
-								<li>Assiting the manager in planning truck.</li>
-								<li>Handling details of billing and paper work.</li>
-							</ul>
-						</section>
-						<section class="col-xs-2 col-sm-2 col-md-3 col-lg-3 col-xl-2   ">
-							<i>January 2015 - January 2016</i>
-						</section>
-					</div> <!-- row -->
-				</div> <!-- container -->
-			</div> <!-- end of work experience -->
-			<!-- education -->
-			<div id="edu" class="tab-pane fade">
-				<div class="container">
-					<h3 id="edu"><u><b>Education</b></u></h3>
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-							<div class="title"><p>Student - Georgia State Uninversity, Clarskton, GA.</p></div>
-							<ul>
-								<li>General Engineering</li>
-								<li>Computer Science</li>
-							</ul>
-						</section>
-						<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-							<i>August 2014 - Present</i>
-						</section>
-					</div> <!-- row -->
+				<div class="row">
+					<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+						<div class="title">	<p>Web Editor of Computing Engineering Club - Georgia State University, Clarkston, GA.</p> </div>
+					</section>
+					<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+						<i>August 2015 - May 2016</i>
+					</section>
+				</div>	
 
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-							<div class="title">	<p>Graduated - Horizons School, Atlanta, GA.</p></div>
-						</section> 
-						<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-							<i>May 2014</i>
-						</section>
-					</div>
-				</div> <!-- container -->
-			</div><!-- end of education -->	
-			<!-- skills			 -->
-			<div id="skills" class="tab-pane fade">
-				<div class="container">
-					<h3><u><b>Skills</b></u></h3>
-					<p >Version Control</p>
-					<ul>
-						<li>Git</li>
-						<li>Git Hub</li>
-					</ul>
-					<p>Programming Languages</p>
-					<ul>
-						<li>Java</li>
-					</ul>
-					<p >Web Front-End</p>
-					<ul>
-						<li>HTML_5</li>
-						<li>CSS_3</li>
-						<li>Bootstrap</li>
-						<li>JQuery</li>
-					</ul>
-					<p>Linguistics</p>
-					<ul>
-						<li>Vietnamese</li>
-						<li>English</li>
-						<li>Basic Chinese</li>
-					</ul>
-				</div> 
-			</div><!-- end of skills -->
-			<!-- project -->
-			<div id="projects" class="tab-pane fade">
-				<div class="container">
-					<h3><u><b>Projects</b></u></h3>
-					<div class="row">
-						<section class="col-sm-6">
-							<p>Coming soon!!!!!</p>
-						</section>
-					</div>
+				<div class="row">
+					<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+						<div class="title"><p>Star Leader - Georgia State University, Clarkston, GA.</p></div>
+					</section>
+					<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+						<i>January 2015 - May 2015</i>
+					</section>	
 				</div>
 			</div>
-			<!-- leader ship -->
-			<div id="leaderShip" class="tab-pane fade">
-				<div class="container">					
-					<h3 id="leaderShip"><u><b>Leadership</b></u></h3>
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-							<div class="title"><p>President of Science Club - Georgia State University, Clarskton, GA.</p></div>
-						</section>
-						<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-							<i>January 2015 - Present</i>
-						</section>
-					</div>
+		</div><!-- end of leader ship -->
+		<!-- award -->
+<div id="award" class="tab-pane fade">
+	<div class="container">
+		<h3 id="award"><u><b>Accomplishments & Awards</b></u></h3>
+		<div class="row">
+			<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10 ">
+				<div class="title"><p>International Peer Assistant</p></div>
+			</section>
+			<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+				<i>2016</i>
+			</section>
+		</div>
+		<div class=" center-block text-center">
+			<a href="images/IPACertificate.jpg">	<img src="images/IPACertificate.jpg" class="img-thumbnail " alt="certificate picture" width="200px">
+			</div></a>
 
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-							<div class="title">	<p>International Peer Assitant - Georgia State University, Clarkston, GA.</p></div>
-						</section>
-						<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-							<i>August 2015 - Present</i>
-						</section>
-					</div>
+			<div class="row">
+				<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+					<div class="title"><p>PHI THETA KAPPA Honor Society Induction</p></div>
+				</section>
+				<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+					<i>2016</i>
+				</section>
+			</div>
+		<div class="row center-block text-center">
+			<a href="images/PtkInduction.jpg">	<img src="images/PtkInduction.jpg" class="img-thumbnail "  alt="ptk-induction-picture" width="200px">
+			</div></a>
 
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-							<div class="title">	<p>Web Editor of Computing Engineering Club - Georgia State University, Clarkston, GA.</p> </div>
-						</section>
-						<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-							<i>August 2015 - May 2016</i>
-						</section>
-					</div>	
+		<div class="row">
+			<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+				<div class="title"><p>Academic Achivement Award</p></div>
+			</section>
+			<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+				<i>2016</i>
+			</section>
+		</div>
+		<div class="row center-block text-center">
+			<a href="images/StemAward.jpg" >	<img src="images/StemAward.jpg" class="img-thumbnail "  alt="stem-award-picture" width="200px">
+			</div></a>
 
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-							<div class="title"><p>Star Leader - Georgia State University, Clarkston, GA.</p></div>
-						</section>
-						<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-							<i>January 2015 - May 2015</i>
-						</section>	
-					</div>
-				</div>
-			</div><!-- end of leader ship -->
-			<!-- award -->
-			<div id="award" class="tab-pane fade">
-				<div class="container">
-					<h3 id="award"><u><b>Accomplishments & Awards</b></u></h3>
-					<div class="row">
-						<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10 ">
-							<div class="title"><p>International Peer Assistant</p></div>
-						</section>
-						<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-							<i>2016</i>
-						</section>
-					</div>
-					<div class=" center-block text-center">
-						<a href="images/IPACertificate.jpg">	<img src="images/IPACertificate.jpg" class="img-thumbnail " alt="certificate picture" width="200px">
-						</div></a>
+		<div class="row">
+			<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+				<div class="title"><p>Phi Theta Kappa Honor Society</p></div>
+			</section>
+			<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+				<i>2015</i>
+			</section>
+		</div>		
+		<div class="row center-block text-center">
+			<a href="images/Ptk2015.jpg">	<img src="images/Ptk2015.jpg" class="img-thumbnail "  alt="ptk-2105-picture" width="200px">
+			</div></a>
 
-						<div class="row">
-							<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-								<div class="title"><p>PHI THETA KAPPA Honor Society Induction</p></div>
-							</section>
-							<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-								<i>2016</i>
-							</section>
-						</div>
-						<div class="row center-block text-center">
-							<a href="images/PtkInduction.jpg">	<img src="images/PtkInduction.jpg" class="img-thumbnail "  alt="ptk-induction-picture" width="200px">
-							</div></a>
+		<div class="row">
+			<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+				<div class="title"><p>Georgia International Leadership Conference</p></div>
+			</section>
+			<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+				<i>2015</i>
+			</section>
+		</div>
+		<div class="row center-block text-center">
+			<a href="images/leadership.jpg">	<img src="images/leadership.jpg" class="img-thumbnail "  alt="GILC-2105-picture" width="200px">
+			</a></div>
 
-							<div class="row">
-								<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-									<div class="title"><p>Academic Achivement Award</p></div>
-								</section>
-								<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-									<i>2016</i>
-								</section>
-							</div>
-							<div class="row center-block text-center">
-								<a href="images/StemAward.jpg" >	<img src="images/StemAward.jpg" class="img-thumbnail "  alt="stem-award-picture" width="200px">
-								</div></a>
+		<div class="row">
+			<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+				<div class="title"><p>The National Society Collegiate Scholars</p></div>
+			</section>
+			<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+				<i>2015</i>
+			</section>
+		</div>
+		<div class="row center-block text-center">
+			<a href="images/nscs.jpg">	<img src="images/nscs.jpg" class="img-thumbnail "  alt="nscs-picture" width="200px">
+			</div></a>
 
-								<div class="row">
-									<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-										<div class="title"><p>Phi Theta Kappa Honor Society</p></div>
-									</section>
-									<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-										<i>2015</i>
-									</section>
-								</div>		
-								<div class="row center-block text-center">
-									<a href="images/Ptk2015.jpg">	<img src="images/Ptk2015.jpg" class="img-thumbnail "  alt="ptk-2105-picture" width="200px">
-									</div></a>
-
-									<div class="row">
-										<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-											<div class="title"><p>Georgia International Leadership Conference</p></div>
-										</section>
-										<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-											<i>2015</i>
-										</section>
-									</div>
-									<div class="row center-block text-center">
-										<a href="images/leadership.jpg">	<img src="images/leadership.jpg" class="img-thumbnail "  alt="GILC-2105-picture" width="200px">
-									</a></div>
-
-										<div class="row">
-											<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-												<div class="title"><p>The National Society Collegiate Scholars</p></div>
-											</section>
-											<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-												<i>2015</i>
-											</section>
-										</div>
-										<div class="row center-block text-center">
-											<a href="images/nscs.jpg">	<img src="images/nscs.jpg" class="img-thumbnail "  alt="nscs-picture" width="200px">
-											</div></a>
-
-											<div class="row">
-												<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-													<div class="title"><p>Horizons School Diploma</p></div>
-												</section>
-												<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-													<i>2014</i>
-												</section>
-											</div>
-											<div class="row center-block text-center">
-												<a href="images/HsDiploma.jpg">	<img src="images/HsDiploma.jpg" class="img-thumbnail "  alt="High School Diploma" width="200px">
-												</a></div>				
-											</div>
-										</div>
-									</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+			<div class="row">
+				<section class="col-xs-7 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+					<div class="title"><p>Horizons School Diploma</p></div>
+				</section>
+				<section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+					<i>2014</i>
+				</section>
+			</div>
+			<div class="row center-block text-center">
+				<a href="images/HsDiploma.jpg">	<img src="images/HsDiploma.jpg" class="img-thumbnail "  alt="High School Diploma" width="200px">
+				</a></div>
+			</div>				
+		</div>
+	</div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
