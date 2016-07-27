@@ -8,7 +8,7 @@
 	background-color: #E8E8E8;
 }
 .nav-tabs > li > a:hover{
-  background-color: #282828  /* !important;*/
+  background-color: #282828 
     border: none;
     border-radius: 0;
     color: black;
@@ -40,8 +40,6 @@ body{
 .icon-bar{
 	background-color: black;
 }
-.mb_share .button.youtube .icon {
-  background-position:-80px 0;
+#email {
+	color: black;
 }
-.mb_share .button.youtube > div {
-  background-color:#e22b26;
