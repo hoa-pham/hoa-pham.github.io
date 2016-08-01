@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
 <link rel="stylesheet" type="text/css" href="css/social-buttons-3.css">
+<link rel="stylesheet" type="text/css" href="lightbox2-master/lightbox2-master/dist/css/lightbox.min.css">
 
 <title>HoaPham's Resume</title>
 </head>
@@ -258,7 +259,7 @@
 			</section>
 		</div>
 		<div class=" center-block text-center">
-			<a href="images/IPACertificate.jpg">	<img src="images/IPACertificate.jpg" class="img-thumbnail " alt="certificate picture" width="200px">
+			<a href="images/IPACertificate.jpg" data-lightbox='award'>	<img src="images/IPACertificate.jpg" class="img-thumbnail " alt="certificate picture" width="200px">
 			</div></a>
 
 			<div class="row">
@@ -270,7 +271,7 @@
 				</section>
 			</div>
 		<div class="row center-block text-center">
-			<a href="images/PtkInduction.jpg">	<img src="images/PtkInduction.jpg" class="img-thumbnail "  alt="ptk-induction-picture" width="200px">
+			<a href="images/PtkInduction.jpg" data-lightbox='award'>	<img src="images/PtkInduction.jpg" class="img-thumbnail "  alt="ptk-induction-picture" width="200px">
 			</div></a>
 
 		<div class="row">
@@ -282,7 +283,7 @@
 			</section>
 		</div>
 		<div class="row center-block text-center">
-			<a href="images/StemAward.jpg" >	<img src="images/StemAward.jpg" class="img-thumbnail "  alt="stem-award-picture" width="200px">
+			<a href="images/StemAward.jpg" data-lightbox='award' >	<img src="images/StemAward.jpg" class="img-thumbnail "  alt="stem-award-picture" width="200px">
 			</div></a>
 
 		<div class="row">
@@ -294,7 +295,7 @@
 			</section>
 		</div>		
 		<div class="row center-block text-center">
-			<a href="images/Ptk2015.jpg">	<img src="images/Ptk2015.jpg" class="img-thumbnail "  alt="ptk-2105-picture" width="200px">
+			<a href="images/Ptk2015.jpg" data-lightbox='award'>	<img src="images/Ptk2015.jpg" class="img-thumbnail "  alt="ptk-2105-picture" width="200px">
 			</div></a>
 
 		<div class="row">
@@ -306,7 +307,7 @@
 			</section>
 		</div>
 		<div class="row center-block text-center">
-			<a href="images/leadership.jpg">	<img src="images/leadership.jpg" class="img-thumbnail "  alt="GILC-2105-picture" width="200px">
+			<a href="images/leadership.jpg" data-lightbox="award">	<img src="images/leadership.jpg" class="img-thumbnail "  alt="GILC-2105-picture" width="200px">
 			</a></div>
 
 		<div class="row">
@@ -318,7 +319,7 @@
 			</section>
 		</div>
 		<div class="row center-block text-center">
-			<a href="images/nscs.jpg">	<img src="images/nscs.jpg" class="img-thumbnail "  alt="nscs-picture" width="200px">
+			<a href="images/nscs.jpg" data-lightbox="award">	<img src="images/nscs.jpg" class="img-thumbnail "  alt="nscs-picture" width="200px">
 			</div></a>
 
 			<div class="row">
@@ -330,13 +331,24 @@
 				</section>
 			</div>
 			<div class="row center-block text-center">
-				<a href="images/HsDiploma.jpg">	<img src="images/HsDiploma.jpg" class="img-thumbnail "  alt="High School Diploma" width="200px">
-				</a></div>
+				<a href="images/HsDiploma.jpg" data-lightbox="award">
+					<img  src="images/HsDiploma.jpg" class="img-thumbnail "  alt="High School Diploma" width="200px">
+				</a>
+			</div>
 			</div>				
 		</div>
 	</div>
 </div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript">
+	lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'maxWidth',
+      'maxHeight'
+    })
+</script>
+	<script src="lightbox2-master/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
