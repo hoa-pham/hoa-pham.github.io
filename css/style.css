@@ -29,6 +29,7 @@ body{
 }
 #bodyContain{
 	margin-top: 175px;
+	margin-bottom: 50px;
 }
 #text{
 	border-right: 1px solid;
@@ -49,4 +50,8 @@ body{
 }
 .link, .link:hover {
 	color: blue;
+}
+#copy_right{
+	color: #E8E8E8;
+	font-family: Impact, fantasy;
 }
